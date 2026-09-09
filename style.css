@@ -15,16 +15,22 @@ html {
 body {
     font-family: "Inter", sans-serif;
     background:
-        radial-gradient(circle at 50% 0%, #252525 0%, #080808 45%, #000 100%);
-    color: #fff;
+        radial-gradient(
+            circle at 50% 0%,
+            #252525 0%,
+            #080808 45%,
+            #000000 100%
+        );
+    color: #ffffff;
     min-height: 100vh;
     overflow-x: hidden;
 }
 
 ::selection {
     background: #a00000;
-    color: #fff;
+    color: #ffffff;
 }
+
 
 /* =========================
    SCROLLBAR
@@ -45,6 +51,7 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: #b00000;
 }
+
 
 /* =========================
    NAVBAR
@@ -87,6 +94,7 @@ nav {
 
 nav ul {
     list-style: none;
+
     display: flex;
     gap: 28px;
 }
@@ -94,8 +102,9 @@ nav ul {
 nav a {
     position: relative;
 
-    color: #bbb;
+    color: #bbbbbb;
     text-decoration: none;
+
     font-size: 14px;
 
     transition: 0.3s ease;
@@ -109,6 +118,7 @@ nav a::after {
     content: "";
 
     position: absolute;
+
     left: 0;
     bottom: -7px;
 
@@ -123,6 +133,7 @@ nav a::after {
 nav a:hover::after {
     width: 100%;
 }
+
 
 /* =========================
    HERO
@@ -189,6 +200,7 @@ nav a:hover::after {
     justify-content: center;
 
     font-size: 42px;
+
     color: #b00000;
 
     box-shadow:
@@ -215,7 +227,7 @@ nav a:hover::after {
 }
 
 .hero p {
-    color: #aaa;
+    color: #aaaaaa;
 
     max-width: 680px;
 
@@ -240,12 +252,15 @@ nav a:hover::after {
     letter-spacing: 3px;
 
     font-size: 11px;
+
     font-weight: 700;
 
     background: rgba(120, 0, 0, 0.08);
 
-    box-shadow: 0 0 20px rgba(120, 0, 0, 0.12);
+    box-shadow:
+        0 0 20px rgba(120, 0, 0, 0.12);
 }
+
 
 /* =========================
    GENERAL SECTION
@@ -253,6 +268,7 @@ nav a:hover::after {
 
 section {
     max-width: 1200px;
+
     margin: auto;
 
     padding: 100px 25px;
@@ -260,6 +276,7 @@ section {
 
 .section-title {
     text-align: center;
+
     margin-bottom: 55px;
 }
 
@@ -276,9 +293,11 @@ section {
 }
 
 .section-title p {
-    color: #666;
+    color: #666666;
+
     margin-top: 12px;
 }
+
 
 /* =========================
    ABOUT
@@ -303,7 +322,7 @@ section {
 }
 
 .about-text p {
-    color: #aaa;
+    color: #aaaaaa;
 
     line-height: 1.9;
 
@@ -319,7 +338,7 @@ section {
 
     background: rgba(160, 0, 0, 0.08);
 
-    color: #ccc;
+    color: #cccccc;
 
     line-height: 1.6;
 }
@@ -328,6 +347,7 @@ section {
     min-height: 380px;
 
     display: flex;
+
     align-items: center;
     justify-content: center;
 
@@ -338,7 +358,7 @@ section {
             circle,
             #202020 0%,
             #090909 70%,
-            #000 100%
+            #000000 100%
         );
 
     position: relative;
@@ -362,6 +382,7 @@ section {
 
 .about-logo {
     position: relative;
+
     z-index: 2;
 
     font-family: "Cinzel", serif;
@@ -374,13 +395,14 @@ section {
 
     letter-spacing: 5px;
 
-    text-shadow: 0 0 25px rgba(170, 0, 0, 0.5);
+    text-shadow:
+        0 0 25px rgba(170, 0, 0, 0.5);
 }
 
 .about-logo small {
     display: block;
 
-    color: #777;
+    color: #777777;
 
     font-family: "Inter", sans-serif;
 
@@ -391,6 +413,7 @@ section {
     margin-top: 12px;
 }
 
+
 /* =========================
    CHARACTERS
 ========================= */
@@ -398,7 +421,8 @@ section {
 .characters {
     display: grid;
 
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns:
+        repeat(3, 1fr);
 
     gap: 25px;
 }
@@ -487,7 +511,7 @@ section {
 }
 
 .codename {
-    color: #666;
+    color: #666666;
 
     font-size: 13px;
 
@@ -495,12 +519,13 @@ section {
 }
 
 .card p {
-    color: #999;
+    color: #999999;
 
     line-height: 1.75;
 
     font-size: 14px;
 }
+
 
 /* =========================
    INTEL
@@ -509,7 +534,7 @@ section {
 .intel-box {
     background: #0a0a0a;
 
-    border: 1px solid #222;
+    border: 1px solid #222222;
 
     padding: 30px;
 
@@ -533,7 +558,7 @@ td {
 
     padding: 18px;
 
-    border-bottom: 1px solid #222;
+    border-bottom: 1px solid #222222;
 }
 
 th {
@@ -547,18 +572,21 @@ th {
 }
 
 td {
-    color: #999;
+    color: #999999;
 
     font-size: 14px;
 }
 
 tr {
-    transition: background 0.3s ease;
+    transition:
+        background 0.3s ease;
 }
 
 tbody tr:hover {
-    background: rgba(160, 0, 0, 0.06);
+    background:
+        rgba(160, 0, 0, 0.06);
 }
+
 
 /* =========================
    DOSSIER
@@ -569,7 +597,8 @@ tbody tr:hover {
 
     display: grid;
 
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns:
+        repeat(4, 1fr);
 
     gap: 15px;
 }
@@ -579,7 +608,7 @@ tbody tr:hover {
 
     text-align: center;
 
-    border: 1px solid #222;
+    border: 1px solid #222222;
 
     background: #090909;
 }
@@ -597,7 +626,7 @@ tbody tr:hover {
 }
 
 .dossier-item span {
-    color: #666;
+    color: #666666;
 
     font-size: 11px;
 
@@ -605,6 +634,7 @@ tbody tr:hover {
 
     text-transform: uppercase;
 }
+
 
 /* =========================
    FOOTER
@@ -633,7 +663,7 @@ footer h3 span {
 }
 
 footer p {
-    color: #555;
+    color: #555555;
 
     font-size: 13px;
 
@@ -643,24 +673,29 @@ footer p {
 .copyright {
     margin-top: 20px;
 
-    color: #333;
+    color: #333333;
 
     font-size: 11px;
 }
 
+
 /* =========================
-   ANIMATIONS
+   ANIMATION
 ========================= */
 
 @keyframes fadeUp {
     from {
         opacity: 0;
-        transform: translateY(30px);
+
+        transform:
+            translateY(30px);
     }
 
     to {
         opacity: 1;
-        transform: translateY(0);
+
+        transform:
+            translateY(0);
     }
 }
 
@@ -689,14 +724,16 @@ footer p {
     }
 }
 
+
 /* =========================
-   RESPONSIVE
+   RESPONSIVE TABLET
 ========================= */
 
 @media (max-width: 950px) {
 
     .characters {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns:
+            repeat(2, 1fr);
     }
 
     .about {
@@ -704,9 +741,15 @@ footer p {
     }
 
     .dossier {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns:
+            repeat(2, 1fr);
     }
 }
+
+
+/* =========================
+   RESPONSIVE MOBILE
+========================= */
 
 @media (max-width: 650px) {
 
@@ -751,7 +794,8 @@ footer p {
     }
 
     .dossier {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns:
+            1fr 1fr;
     }
 
     section {
@@ -763,6 +807,11 @@ footer p {
     }
 }
 
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
 @media (max-width: 400px) {
 
     .dossier {
@@ -771,8 +820,13 @@ footer p {
 
     .symbol {
         width: 75px;
+
         height: 75px;
 
         font-size: 32px;
     }
-}
+
+    .hero h1 {
+        font-size: 38px;
+    }
+       }
