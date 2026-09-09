@@ -1,2 +1,2 @@
 # kurosawa-gin
-organisasi hitam 
+cita cita jadi gin
