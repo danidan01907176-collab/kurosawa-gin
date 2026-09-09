@@ -1,0 +1,2 @@
+# kurosawa-gin
+organisasi hitam 
