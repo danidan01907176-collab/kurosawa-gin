@@ -1,0 +1,584 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+font-family: "Montserrat", sans-serif;
+background: #050505;
+color: #f2f2f2;
+line-height: 1.6;
+}
+
+a {
+text-decoration: none;
+color: inherit;
+}
+
+/* =========================
+NAVBAR
+========================= */
+
+nav {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+z-index: 1000;
+
+```
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+padding: 18px 7%;
+
+background: rgba(0, 0, 0, 0.92);
+border-bottom: 1px solid rgba(170, 0, 0, 0.4);
+backdrop-filter: blur(10px);
+```
+
+}
+
+.logo {
+font-family: "Cinzel", serif;
+font-size: 20px;
+font-weight: 800;
+letter-spacing: 3px;
+color: #ffffff;
+}
+
+.logo span {
+color: #b00000;
+}
+
+nav ul {
+display: flex;
+gap: 30px;
+list-style: none;
+}
+
+nav ul li a {
+font-size: 13px;
+font-weight: 600;
+letter-spacing: 1px;
+color: #ccc;
+transition: 0.3s;
+}
+
+nav ul li a:hover {
+color: #d00000;
+}
+
+/* =========================
+HERO
+========================= */
+
+.hero {
+min-height: 100vh;
+
+```
+display: flex;
+align-items: center;
+justify-content: center;
+
+text-align: center;
+
+padding: 120px 20px 80px;
+
+background:
+    linear-gradient(
+        rgba(0, 0, 0, 0.82),
+        rgba(0, 0, 0, 0.94)
+    ),
+    radial-gradient(
+        circle at center,
+        #350000 0%,
+        #080808 45%,
+        #000000 100%
+    );
+
+position: relative;
+overflow: hidden;
+```
+
+}
+
+.hero::before {
+content: "";
+position: absolute;
+
+```
+width: 500px;
+height: 500px;
+
+border-radius: 50%;
+
+background: rgba(150, 0, 0, 0.12);
+
+filter: blur(80px);
+```
+
+}
+
+.hero-content {
+position: relative;
+z-index: 2;
+max-width: 850px;
+}
+
+.hero h1 {
+font-family: "Cinzel", serif;
+
+```
+font-size: clamp(45px, 8vw, 90px);
+
+font-weight: 800;
+
+letter-spacing: 8px;
+
+text-transform: uppercase;
+
+text-shadow:
+    0 0 20px rgba(170, 0, 0, 0.7);
+```
+
+}
+
+.hero h1 span {
+color: #b30000;
+}
+
+.hero p {
+margin-top: 20px;
+
+```
+color: #aaa;
+
+font-size: 15px;
+
+letter-spacing: 4px;
+
+text-transform: uppercase;
+```
+
+}
+
+.hero-button {
+display: inline-block;
+
+```
+margin-top: 40px;
+
+padding: 14px 32px;
+
+border: 1px solid #900000;
+
+background: #900000;
+
+font-size: 13px;
+
+font-weight: 700;
+
+letter-spacing: 2px;
+
+transition: 0.3s;
+```
+
+}
+
+.hero-button:hover {
+background: transparent;
+
+```
+color: #e00000;
+
+transform: translateY(-3px);
+```
+
+}
+
+/* =========================
+GENERAL SECTION
+========================= */
+
+section {
+padding: 100px 7%;
+}
+
+.section-title {
+text-align: center;
+margin-bottom: 60px;
+}
+
+.section-title h2 {
+font-family: "Cinzel", serif;
+
+```
+font-size: 35px;
+
+letter-spacing: 4px;
+
+text-transform: uppercase;
+```
+
+}
+
+.section-title span {
+display: block;
+
+```
+width: 70px;
+height: 3px;
+
+background: #a00000;
+
+margin: 15px auto;
+```
+
+}
+
+.section-title p {
+color: #888;
+font-size: 14px;
+}
+
+/* =========================
+ABOUT
+========================= */
+
+.about {
+background: #090909;
+}
+
+.about-container {
+max-width: 900px;
+
+```
+margin: auto;
+
+padding: 40px;
+
+border-left: 3px solid #8e0000;
+
+background: #0d0d0d;
+```
+
+}
+
+.about-container p {
+color: #aaa;
+
+```
+margin-bottom: 15px;
+
+font-size: 15px;
+```
+
+}
+
+.danger {
+color: #c00000;
+
+```
+font-weight: 700;
+```
+
+}
+
+/* =========================
+CHARACTERS
+========================= */
+
+.characters {
+background: #050505;
+}
+
+.character-grid {
+max-width: 1200px;
+
+```
+margin: auto;
+
+display: grid;
+
+grid-template-columns: repeat(3, 1fr);
+
+gap: 25px;
+```
+
+}
+
+.card {
+background: #0c0c0c;
+
+```
+border: 1px solid #202020;
+
+overflow: hidden;
+
+transition: 0.4s;
+
+position: relative;
+```
+
+}
+
+.card:hover {
+transform: translateY(-8px);
+
+```
+border-color: #a00000;
+
+box-shadow:
+    0 15px 40px rgba(130, 0, 0, 0.2);
+```
+
+}
+
+.card-image {
+width: 100%;
+
+```
+height: 350px;
+
+overflow: hidden;
+
+background: #111;
+```
+
+}
+
+.card-image img {
+width: 100%;
+
+```
+height: 100%;
+
+object-fit: cover;
+
+display: block;
+
+transition: 0.5s;
+```
+
+}
+
+.card:hover .card-image img {
+transform: scale(1.07);
+}
+
+.card-content {
+padding: 25px;
+}
+
+.card-content h3 {
+font-family: "Cinzel", serif;
+
+```
+font-size: 23px;
+
+letter-spacing: 2px;
+
+margin-bottom: 5px;
+```
+
+}
+
+.codename {
+color: #a90000;
+
+```
+font-size: 11px;
+
+letter-spacing: 2px;
+
+text-transform: uppercase;
+
+margin-bottom: 15px;
+```
+
+}
+
+.card-content p {
+color: #888;
+
+```
+font-size: 13px;
+```
+
+}
+
+/* =========================
+DOSSIER
+========================= */
+
+.dossier {
+background: #090909;
+}
+
+.dossier-box {
+max-width: 1000px;
+
+```
+margin: auto;
+
+display: grid;
+
+grid-template-columns: repeat(3, 1fr);
+
+gap: 1px;
+
+background: #333;
+
+border: 1px solid #333;
+```
+
+}
+
+.dossier-item {
+background: #0b0b0b;
+
+```
+padding: 35px;
+
+text-align: center;
+```
+
+}
+
+.dossier-item h3 {
+color: #a00000;
+
+```
+font-family: "Cinzel", serif;
+
+font-size: 17px;
+
+margin-bottom: 10px;
+```
+
+}
+
+.dossier-item p {
+color: #888;
+
+```
+font-size: 13px;
+```
+
+}
+
+/* =========================
+FOOTER
+========================= */
+
+footer {
+padding: 40px 20px;
+
+```
+text-align: center;
+
+background: #000;
+
+border-top: 1px solid #1d1d1d;
+```
+
+}
+
+footer h3 {
+font-family: "Cinzel", serif;
+
+```
+letter-spacing: 3px;
+
+margin-bottom: 10px;
+```
+
+}
+
+footer h3 span {
+color: #a00000;
+}
+
+footer p {
+color: #555;
+
+```
+font-size: 12px;
+```
+
+}
+
+/* =========================
+RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+```
+nav {
+    padding: 16px 5%;
+}
+
+nav ul {
+    gap: 15px;
+}
+
+.character-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.dossier-box {
+    grid-template-columns: repeat(2, 1fr);
+}
+```
+
+}
+
+@media (max-width: 600px) {
+
+```
+nav {
+    position: absolute;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+nav ul {
+    gap: 15px;
+}
+
+.hero {
+    padding-top: 160px;
+}
+
+.hero h1 {
+    letter-spacing: 4px;
+}
+
+section {
+    padding: 70px 5%;
+}
+
+.character-grid {
+    grid-template-columns: 1fr;
+}
+
+.dossier-box {
+    grid-template-columns: 1fr;
+}
+
+.card-image {
+    height: 400px;
+}
+```
+
+  }
